@@ -12,12 +12,14 @@ class BookDetails extends Component {
                     <h2>{book.name}</h2>
                     <p>{book.author.name}</p>
                     <p>{book.genre}</p>
-                    <p>All Books by this Author:</p>
-                    <ul className="other-books">
+                    <br />
+                    <br />
+                    <p><b>All Books by this Author:</b></p>
+                    <p className="other-books">
                         {book.author.books.map(item => {
-                            return <li key={item.id}>{item.name}</li>
+                            return <p key={item.id}>{item.name}</p>
                         })}
-                    </ul>
+                    </p>
                 </div>
             )
         } else {
