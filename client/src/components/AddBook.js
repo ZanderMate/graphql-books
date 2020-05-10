@@ -35,7 +35,6 @@ class AddBook extends Component {
             },
             refetchQueries: [{ query: getBooksQuery }]
         })
-
     }
 
     render() {
